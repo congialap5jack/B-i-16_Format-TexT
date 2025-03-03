@@ -1,6 +1,6 @@
 ﻿namespace Bài_16_Format_TexT
 {
-    partial class Foxmatext
+    partial class Formatext
     {
         /// <summary>
         /// Required designer variable.
@@ -32,15 +32,15 @@
             this.txtNhapTen = new System.Windows.Forms.TextBox();
             this.Color = new System.Windows.Forms.ListBox();
             this.Font = new System.Windows.Forms.ListBox();
-            this.radRed = new System.Windows.Forms.RadioButton();
+            this.redRed = new System.Windows.Forms.RadioButton();
             this.radGreen = new System.Windows.Forms.RadioButton();
             this.radBlue = new System.Windows.Forms.RadioButton();
             this.radBlack = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chkBold = new System.Windows.Forms.CheckBox();
+            this.chkItalic = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.lbl = new System.Windows.Forms.Label();
-            this.lblLapTrinh = new System.Windows.Forms.Label();
+            this.lable = new System.Windows.Forms.Label();
+            this.lblLaptrinh = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -87,19 +87,20 @@
             this.Font.Size = new System.Drawing.Size(149, 199);
             this.Font.TabIndex = 2;
             // 
-            // radRed
+            // redRed
             // 
-            this.radRed.AutoSize = true;
-            this.radRed.BackColor = System.Drawing.Color.White;
-            this.radRed.ForeColor = System.Drawing.Color.Red;
-            this.radRed.Location = new System.Drawing.Point(28, 126);
-            this.radRed.Name = "radRed";
-            this.radRed.Size = new System.Drawing.Size(45, 17);
-            this.radRed.TabIndex = 3;
-            this.radRed.TabStop = true;
-            this.radRed.Text = "Red";
-            this.radRed.UseVisualStyleBackColor = false;
-            this.radRed.CheckedChanged += new System.EventHandler(this.radRed_CheckedChanged);
+            this.redRed.AutoSize = true;
+            this.redRed.BackColor = System.Drawing.Color.White;
+            this.redRed.ForeColor = System.Drawing.Color.Red;
+            this.redRed.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.redRed.Location = new System.Drawing.Point(28, 126);
+            this.redRed.Name = "redRed";
+            this.redRed.Size = new System.Drawing.Size(45, 17);
+            this.redRed.TabIndex = 3;
+            this.redRed.TabStop = true;
+            this.redRed.Text = "Red";
+            this.redRed.UseVisualStyleBackColor = false;
+            this.redRed.CheckedChanged += new System.EventHandler(this.redRed_CheckedChanged);
             // 
             // radGreen
             // 
@@ -112,6 +113,7 @@
             this.radGreen.TabStop = true;
             this.radGreen.Text = "Green";
             this.radGreen.UseVisualStyleBackColor = true;
+            this.radGreen.CheckedChanged += new System.EventHandler(this.radGreen_CheckedChanged);
             // 
             // radBlue
             // 
@@ -124,6 +126,7 @@
             this.radBlue.TabStop = true;
             this.radBlue.Text = "Blue";
             this.radBlue.UseVisualStyleBackColor = true;
+            this.radBlue.CheckedChanged += new System.EventHandler(this.radBlue_CheckedChanged);
             // 
             // radBlack
             // 
@@ -136,29 +139,32 @@
             this.radBlack.TabStop = true;
             this.radBlack.Text = "Black";
             this.radBlack.UseVisualStyleBackColor = true;
+            this.radBlack.CheckedChanged += new System.EventHandler(this.radBlack_CheckedChanged);
             // 
-            // checkBox1
+            // chkBold
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox1.Location = new System.Drawing.Point(284, 117);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(71, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Đậm bold";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkBold.AutoSize = true;
+            this.chkBold.ForeColor = System.Drawing.Color.Blue;
+            this.chkBold.Location = new System.Drawing.Point(284, 117);
+            this.chkBold.Name = "chkBold";
+            this.chkBold.Size = new System.Drawing.Size(71, 17);
+            this.chkBold.TabIndex = 4;
+            this.chkBold.Text = "Đậm bold";
+            this.chkBold.UseVisualStyleBackColor = true;
+            this.chkBold.CheckedChanged += new System.EventHandler(this.chkBold_CheckedChanged);
             // 
-            // checkBox2
+            // chkItalic
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox2.Location = new System.Drawing.Point(284, 161);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(91, 17);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Nghiêng Italic";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkItalic.AutoSize = true;
+            this.chkItalic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkItalic.ForeColor = System.Drawing.Color.Blue;
+            this.chkItalic.Location = new System.Drawing.Point(284, 161);
+            this.chkItalic.Name = "chkItalic";
+            this.chkItalic.Size = new System.Drawing.Size(91, 17);
+            this.chkItalic.TabIndex = 4;
+            this.chkItalic.Text = "Nghiêng Italic";
+            this.chkItalic.UseVisualStyleBackColor = true;
+            this.chkItalic.CheckedChanged += new System.EventHandler(this.chkItalic_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -171,25 +177,26 @@
             this.checkBox3.TabIndex = 4;
             this.checkBox3.Text = "Gạch Chân";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // lbl
+            // lable
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.ForeColor = System.Drawing.Color.Red;
-            this.lbl.Location = new System.Drawing.Point(12, 329);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(76, 13);
-            this.lbl.TabIndex = 5;
-            this.lbl.Text = "Lập Trình Bởi :";
+            this.lable.AutoSize = true;
+            this.lable.ForeColor = System.Drawing.Color.Red;
+            this.lable.Location = new System.Drawing.Point(12, 329);
+            this.lable.Name = "lable";
+            this.lable.Size = new System.Drawing.Size(76, 13);
+            this.lable.TabIndex = 5;
+            this.lable.Text = "Lập Trình Bởi :";
             // 
-            // lblLapTrinh
+            // lblLaptrinh
             // 
-            this.lblLapTrinh.AutoSize = true;
-            this.lblLapTrinh.Location = new System.Drawing.Point(116, 329);
-            this.lblLapTrinh.Name = "lblLapTrinh";
-            this.lblLapTrinh.Size = new System.Drawing.Size(53, 13);
-            this.lblLapTrinh.TabIndex = 6;
-            this.lblLapTrinh.Text = "Tèo 2011";
+            this.lblLaptrinh.AutoSize = true;
+            this.lblLaptrinh.Location = new System.Drawing.Point(116, 329);
+            this.lblLaptrinh.Name = "lblLaptrinh";
+            this.lblLaptrinh.Size = new System.Drawing.Size(53, 13);
+            this.lblLaptrinh.TabIndex = 6;
+            this.lblLaptrinh.Text = "Tèo 2011";
             // 
             // btnThoat
             // 
@@ -201,26 +208,26 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // Foxmatext
+            // Formatext
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.lblLapTrinh);
-            this.Controls.Add(this.lbl);
+            this.Controls.Add(this.lblLaptrinh);
+            this.Controls.Add(this.lable);
             this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chkItalic);
+            this.Controls.Add(this.chkBold);
             this.Controls.Add(this.radBlack);
             this.Controls.Add(this.radBlue);
             this.Controls.Add(this.radGreen);
-            this.Controls.Add(this.radRed);
+            this.Controls.Add(this.redRed);
             this.Controls.Add(this.Font);
             this.Controls.Add(this.Color);
             this.Controls.Add(this.txtNhapTen);
             this.Controls.Add(this.label1);
-            this.Name = "Foxmatext";
+            this.Name = "Formatext";
             this.Text = "Foxmatext";
             this.Load += new System.EventHandler(this.Foxmatext_Load);
             this.ResumeLayout(false);
@@ -234,15 +241,15 @@
         private System.Windows.Forms.TextBox txtNhapTen;
         private System.Windows.Forms.ListBox Color;
         private System.Windows.Forms.ListBox Font;
-        private System.Windows.Forms.RadioButton radRed;
+        private System.Windows.Forms.RadioButton redRed;
         private System.Windows.Forms.RadioButton radGreen;
         private System.Windows.Forms.RadioButton radBlue;
         private System.Windows.Forms.RadioButton radBlack;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chkBold;
+        private System.Windows.Forms.CheckBox chkItalic;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Label lblLapTrinh;
+        private System.Windows.Forms.Label lable;
+        private System.Windows.Forms.Label lblLaptrinh;
         private System.Windows.Forms.Button btnThoat;
     }
 }

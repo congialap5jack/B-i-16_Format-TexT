@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Bài_16_Format_TexT
 {
-    public partial class Foxmatext: Form
+    public partial class Formatext: Form
     {
-        public Foxmatext()
+        public Formatext()
         {
             InitializeComponent();
         }
@@ -21,28 +21,64 @@ namespace Bài_16_Format_TexT
         {
 
         }
-
-        private void radRed_CheckedChanged(object sender, EventArgs e)
-        {
-            lblLapTrinh.ForeColor = Color.Red;
-            txtNhapTen.ForeColor = Color.Red;
-        }
-
         private void Foxmatext_Load(object sender, EventArgs e)
         {
-            radRed.Checked = true;
+            redRed.Checked = true;
             txtNhapTen.Focus();
-            this.CancelButton = btnThoat;
+           
         }
 
         private void txtNhapTen_TextChanged(object sender, EventArgs e)
         {
-            lblLapTrinh.Text = txtNhapTen.Text;
+            lblLaptrinh.Text = txtNhapTen.Text;
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void redRed_CheckedChanged(object sender, EventArgs e)
+        {
+            lblLaptrinh.ForeColor = System.Drawing.Color.Red;
+            txtNhapTen.ForeColor = System.Drawing.Color.Red;
+        }
+
+        private void radGreen_CheckedChanged(object sender, EventArgs e)
+        {
+            lblLaptrinh.ForeColor = System.Drawing.Color.Green;
+            txtNhapTen.ForeColor = System.Drawing.Color.Green;
+        }
+
+        private void radBlue_CheckedChanged(object sender, EventArgs e)
+        {
+            lblLaptrinh.ForeColor = System.Drawing.Color.Blue;
+            txtNhapTen.ForeColor = System.Drawing.Color.Blue;
+        }
+
+        private void radBlack_CheckedChanged(object sender, EventArgs e)
+        {
+            lblLaptrinh.ForeColor = System.Drawing.Color.Black;
+            txtNhapTen.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void chkBold_CheckedChanged(object sender, EventArgs e)
+        {
+            lblLaptrinh.Font = new Font(lblLaptrinh.Font.Name, lblLaptrinh.Font.Size,
+           lblLaptrinh.Font.Style ^ FontStyle.Bold);
+        }
+
+        private void chkItalic_CheckedChanged(object sender, EventArgs e)
+        {
+            lblLaptrinh.Font = new Font(lblLaptrinh.Font.Name, lblLaptrinh.Font.Size,
+           lblLaptrinh.Font.Style ^ FontStyle.Italic);
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            lblLaptrinh.Font = new Font(lblLaptrinh.Font.Name, lblLaptrinh.Font.Size,
+            lblLaptrinh.Font.Style ^ FontStyle.Underline);
+            // them ghi chu
         }
     }
 }
